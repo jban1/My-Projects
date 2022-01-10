@@ -1,0 +1,2 @@
+pytest==6.2.4
+google-python-cloud-debugger==2.18
