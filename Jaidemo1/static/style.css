@@ -1,63 +1,191 @@
-/**
- * Copyright 2021 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-
 h1 {
-font-family:ubuntu;
+font-family:verdana;
 vertical-align: middle;
-
 }
 
 h2 {
-font-family:ubuntu;
+font-family:verdana;
 color:red;
 left:20px;
 }
-header {
-font-family:ubuntu;
+
+h3 {
+font-family:verdana;
+color:blue
+}
+
+p {
+font-size:10pt;
+font-family:verdana;
+}
+
+header1 {
+font-family:verdana;
+height: 100px;
 color:blue;
 left:20px;
 font-weight: bold;
-font-size:25pt;
-background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png")
+font-size:15pt;
+
 }
 
-h3 {
-font-family:ubuntu;
-color:blue
+.container1 {
+font-family:verdana;
+height: 50px;
+font-weight: bold;
+font-size:15pt;
+background-color: #F2007D;
+position: relative;
+border: 1px Solid Pink;
+padding-left: 100px;
+width: 1330px;
+
 }
-p {
-font-size:14pt;
-font-family:cambria;
+
+.container2 {
+font-family:verdana;
+height: 730px;
+width: 250px;
+left:0px;
+top:0px;
+font-size:12pt;
+background-color: #4972D1;
+position: relative;
+border: 1px Solid Pink;
+overflow-y: scroll;
+color: white;
+
 }
-special {color:green }
+
+.container3 {
+font-family:verdana;
+height: 730px;
+width: 1180px;
+color:blue;
+left:250px;
+top:-732px;
+font-weight: bold;
+font-size:25pt;
+position: relative;
+border: 1px Solid Pink;
+
+}
+
+
+.left {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 
 body {
-  background-color: lightblue;
-  vertical-align: middle;
- /*background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");*/
- /*background-image: url('lastminute.png');*/
 
-  font-family: "helvetica", ubuntu;
-  text-align: center;
+/*background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");*/
+/*background-image: url('lastminute.png');*/
+font-family: "verdana", verdana;
+text-align: center;
+height: 785px;
+width:1430px;
+border: 10px Solid Black;
+margin:0;
+padding:0;
 
 
 }
 
-
-
+.div1 {
+  background-color: #4972D1;
+  width: 240px;
+  border: 1px solid pink;
+  padding: 10px;
+  padding-left: 0px;
+  height: 15px;
+  font-size:10pt;
+  text-align: left;
+  margin:0;
+  color: white;
 }
+
+.dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        color: white;
+        padding: 14px 16px;
+        text-align: left;
+        margin:0;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: blue;
+        min-width: 250px;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        background-color: white;
+        border: 1px Solid Pink;
+    }
+
+    .dropdown-content a:hover {
+        color: none;
+        background-color: #EDF1FA;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
