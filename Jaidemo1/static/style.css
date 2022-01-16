@@ -1,6 +1,8 @@
 h1 {
 font-family:verdana;
 vertical-align: middle;
+color:black;
+font-size:12pt;
 }
 
 h2 {
@@ -22,7 +24,7 @@ font-family:verdana;
 header1 {
 font-family:verdana;
 height: 100px;
-color:blue;
+color:black;
 left:20px;
 font-weight: bold;
 font-size:15pt;
@@ -49,7 +51,7 @@ width: 250px;
 left:0px;
 top:0px;
 font-size:12pt;
-background-color: #4972D1;
+background-color: #113280;
 position: relative;
 border: 1px Solid Pink;
 overflow-y: scroll;
@@ -61,7 +63,7 @@ color: white;
 font-family:verdana;
 height: 730px;
 width: 1180px;
-color:blue;
+color:black;
 left:250px;
 top:-732px;
 font-weight: bold;
@@ -77,6 +79,15 @@ border: 1px Solid Pink;
   position: absolute;
   top: 60%;
   left: 15%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  right: -5%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -137,7 +148,7 @@ padding:0;
 }
 
 .div1 {
-  background-color: #4972D1;
+  background-color: #113280;
   width: 240px;
   border: 1px solid pink;
   padding: 10px;
