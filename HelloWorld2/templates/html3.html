@@ -1,0 +1,84 @@
+<!doctype html>
+<title>Example</title>
+<style>
+* {
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav,
+#main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}
+header {
+  background: #FBB3D8;
+  height: 10vh
+}
+
+footer {
+  background: #FBB3D8;
+  height: 10vh
+}
+header, footer, article, form, nav, test, aside {
+  padding: 2em;
+}
+
+form1 {text-align: center;}
+
+</style>
+
+<body>
+<header>NOC and SOC Management system</header>
+<div id="main">
+<article>Article</article><br>
+
+
+<form>
+
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="">
+
+</form><br>
+
+  <h1>Datastore</h1><br>
+
+
+  <h2>Last 10 visits</h2>
+  {% for time in times %}
+    <p>{{ time }}</p>
+  {% endfor %}
+
+
+
+<nav>Nav</nav>
+<aside>Aside</aside>
+
+
+
+
+
+
+</div>
+<footer>Footer</footer>
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</body>
