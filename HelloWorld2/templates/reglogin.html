@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Click to Register and Login Screen -->
+<html lang="en">
+
+<head>
+<title>
+NOC and SOC Management Tool System
+</title>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src = "https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript"></script>
+
+</head>
+
+<body>
+<div id="includedContent"></div>
+
+<div class="container1">
+
+   <div class="left">
+       <h1>NOC and SOC Management System Registration</h1>
+   </div>
+
+  <!-- <div class="right">
+    <h1>Welcome New User</h1>
+  </div> -->
+
+</div>
+
+<div class="container2">
+
+        <div class="div1">
+                <div class="dropdown">
+                    <a href="http://127.0.0.1:8081/register" class="dropbtn" class="dropdown" target="iframe_a">Click to Register</a>
+                </div>
+        </div>
+
+        <div class="div1">
+                <div class="dropdown">
+                    <a href="http://127.0.0.1:8081/login" class="dropbtn" class="dropdown" >Click to Login</a>
+                </div>
+        </div>
+</div>
+
+<div class="container3">
+        <iframe
+                name="iframe_a"
+                id="iframe_a"
+                height="730px"
+                width="1170px"
+                title="Iframe Example"
+                style="border:3px solid red;
+                       margin-top:0px;
+                       overflow: scroll"
+        >
+        </iframe>
+
+<script>
+    $(function(){
+      $("#includedContent").load("iframes.html");
+    });
+</script>
+
+<script>
+    var doc = document.getElementById('iframe_a').contentWindow.document;
+    doc.write('<center> <h2 style="color:blue"> {{resp1}} <br><br> {{resp2}} <br><br> </center> </h2> ');
+    doc.write('<center> <img src="static/fingercrossed.png"></center>');
+</script>
+
+
+
+        <div id="iframeHolder"></div>
+
+    </div>
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> </link>
+
+
+</body>
+</html>

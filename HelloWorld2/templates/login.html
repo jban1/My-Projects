@@ -1,0 +1,67 @@
+<html>
+<!-- Login Form -->
+
+<head>
+<title>
+NOC and SOC Management Tool System
+</title>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src = "https://code.jquery.com/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript"></script>
+
+</head>
+
+   <body>
+
+   <div id="includedContent"></div>
+
+
+<div class="container1" >
+
+   <div class="left" >
+       <h1>NOC and SOC Management System Registration</h1>
+   </div>
+
+</div>
+
+
+
+
+<div class="container2"></div>
+
+<div class="container3">
+    <iframe
+                name="iframe_a"
+                id="iframe_a"
+                height="740px"
+                width="1170px"
+                title="Iframe Example"
+                style="border:3px solid red;
+                       margin-top:0px;
+                       overflow: scroll"
+        >
+        </iframe>
+
+
+<div class="container4">
+
+      <form action = "/get-login" method = "POST" >
+                <p> &nbsp;&nbsp; User Id:   <input type="text" name="userid" id="userid" value={{request.form.userid}} ></p>
+                <p> &nbsp;&nbsp; Password:  <input type="text" name="password" id ="password" value={{request.form.password}}></p>
+                </p>&nbsp; <input type="submit" value="Submit"> </p>
+
+      </form>
+</div>
+</div>
+
+
+
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+   </body>
+
+
+</html>
